@@ -18,7 +18,7 @@ Feel free to use any programming language you feel comfortable with.
 Be sure to create a REST Client test file using Postman or Insomnia (or similar)
 Your API must be composed of the following endpoints:
 - /recipes
--   GET: Get all recipeso
+  - GET: Get all recipeso
   - POST: Add a new recipe
 - / recipes/{id}
   - GET: Get recipe with id {id}
