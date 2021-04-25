@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
-
-
-const ingredientSchema = mongoose.Schema({
-    name: String,
-    recipeId: {type: mongoose.Schema.Types.ObjectId, ref: 'Recipe'}
-    },
+const ingredientSchema = mongoose.Schema(
+  {
+    name: { type: String, required: true },
+    quantity: Number,
+    recipeId : {type: mongoose.Schema.Types.ObjectId, ref: 'Recipe', required: true }
+  },
   { timestamps: true }
 );
 

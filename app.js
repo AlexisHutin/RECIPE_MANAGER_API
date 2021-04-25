@@ -9,7 +9,6 @@ const config = require('./config.json');
 //--- Import ROUTES ---//
 const userRoutes = require('./routes/user');
 const recipeRoutes = require('./routes/recipe');
-const ingredientRoutes = require('./routes/ingredient');
 
 const app = express();
 
@@ -35,6 +34,5 @@ app.use(bodyParser.json());
 //--- Use ROUTES ---//
 app.use('/api/user', userRoutes);
 app.use('/api/recipe', recipeRoutes);
-app.use('/api/ingredient', ingredientRoutes);
 
 module.exports = app;
