@@ -1,5 +1,5 @@
 # RECIPE_MANAGER_API
-Web Service and PersistenceDevelopment Project
+Web Service and Persistence Development Project
 
 ## SPECIFICATION
 
@@ -46,7 +46,7 @@ Clone this repo on your pc and run these commands
 npm install 
 ```
 The last step is to configure the database access. 
-I choose MongoDb for this app and Mongoose.
+I choose MongoDb and Mongoose for this app 
 
 To link the app with a data base you have to create a file named ```config.js```. 
 You can duplicate ```config.exemple.js```.
