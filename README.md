@@ -37,21 +37,86 @@ Users should only access their own recipes and ingredients.
 
 ---
 
+## Usage Instructuions
+
+
+
 ![image](https://user-images.githubusercontent.com/44839732/115994776-a71ac300-a5d8-11eb-9e3b-e8bb0fae13f3.png)
 
 
-- /recipes
+### Recipes
   - GET: Get all recipeso
+  ```
+  localhost:3001/api/recipe/
+  ```
   - POST: Add a new recipe
-- / recipes/{id}
+  ```
+  localhost:3001/api/recipe/
+  ```
+  body : 
+  ```
+  {
+    "name": "crazy recipe" ,
+    "instruction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ipsum non dui cursus posuere. Nunc at sodales nisl, ac sagittis tellus. Nunc ut turpis nulla. Ut non urna a elit viverra tincidunt ut vitae eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam accumsan felis sit amet accumsan. Phasellus eu libero ut dui dapibus blandit. Suspendisse sit amet malesuada leo. Etiam facilisis eleifend leo, nec tincidunt est tristique at. Aenean a risus at ex tempus pellentesque. Sed venenatis ex libero. In est eros, interdum vitae lobortis auctor, ultrices eget felis. ",
+
+    "ingredients": [
+        {
+            "name": "poivre",
+            "quantity": 10
+        },
+        {
+            "name": "farine",
+            "quantity": 300
+        },
+        {
+            "name": "eau",
+            "quantity": 200
+        }
+    ]
+  }
+  ```
+
+### Recipes/{id}
   - GET: Get recipe with id {id}
+  ```
+  localhost:3001/api/recipe/
+  ```
   - PUT:Update recipe with id {id}
+  ```
+  localhost:3001/api/recipe/
+  ```
+  body : 
+  ```
+  
+  ```
   - DELETE: Remove recipe with id {id}
-- /recipes/{id}/ingredients
+
+### Recipes/{id}/ingredients
   - GET: Get all ingredients for recipe with id {id}
+  ```
+  localhost:3001/api/recipe/
+  ```
   - POST: Add ingredient for recipe with id {id}
-- /recipes/{id}/ingredients/{r_id}
+  ```
+  localhost:3001/api/recipe/
+  ```
+  body : 
+  ```
+  
+  ```
+
+### Recipes/{id}/ingredients/{r_id}
   - GET: Get ingredient with id {r_id} for recipe with id {id}
+  ```
+  localhost:3001/api/recipe/
+  ```
   - PUT: Update ingredient with id {r_id} for recipe with id {id}
+   ```
+  localhost:3001/api/recipe/
+  ```
+  body : 
+  ```
+  
+  ```
   - DELETE: Removeingredient with id {r_id} for recipe with id {id}
 
