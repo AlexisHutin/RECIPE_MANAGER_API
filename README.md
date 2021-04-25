@@ -38,7 +38,7 @@ Users should only access their own recipes and ingredients.
 ---
 ## Installation
 
-This is a nodeJs application. It run with express.
+This is a nodeJs/express application.
 
 Clone this repo on your pc and run these commands
 
@@ -50,7 +50,7 @@ I choose MongoDb for this app and Mongoose.
 
 To link the app with a data base you have to create a file named ```config.js```. 
 You can duplicate ```config.exemple.js```.
-
+And add this lines in it : 
 ```
 {
   "ipBDD": "path To Your Bdd"
