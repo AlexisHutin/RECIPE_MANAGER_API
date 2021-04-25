@@ -36,3 +36,22 @@ Data must be formatted in JSON.
 Users should only access their own recipes and ingredients.
 
 ---
+
+![image](https://user-images.githubusercontent.com/44839732/115994776-a71ac300-a5d8-11eb-9e3b-e8bb0fae13f3.png)
+
+
+- /recipes
+  - GET: Get all recipeso
+  - POST: Add a new recipe
+- / recipes/{id}
+  - GET: Get recipe with id {id}
+  - PUT:Update recipe with id {id}
+  - DELETE: Remove recipe with id {id}
+- /recipes/{id}/ingredients
+  - GET: Get all ingredients for recipe with id {id}
+  - POST: Add ingredient for recipe with id {id}
+- /recipes/{id}/ingredients/{r_id}
+  - GET: Get ingredient with id {r_id} for recipe with id {id}
+  - PUT: Update ingredient with id {r_id} for recipe with id {id}
+  - DELETE: Removeingredient with id {r_id} for recipe with id {id}
+
