@@ -40,12 +40,12 @@ Users should only access their own recipes and ingredients.
 
 This is a nodeJs/express application.
 
-Clone this repo on your pc and run these commands
+Clone this repo on your pc and run this commands
 
 ```
 npm install 
 ```
-The last step is to configure the database access. 
+The next step is to configure the database access. 
 I choose MongoDb and Mongoose for this app 
 
 To link the app with a data base you have to create a file named ```config.js```. 
