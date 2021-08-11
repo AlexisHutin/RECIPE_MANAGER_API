@@ -5,8 +5,8 @@ Web Service and Persistence Development Project
 
 ---
 
-Your company just signed a contract for developing a REST Web API:MyRecipeManager.
-The purpose of this web serviceis simple:Createand manage cooking recipes.
+Your company just signed a contract for developing a REST Web API : MyRecipeManager.
+The purpose of this web serviceis simple : Create and manage cooking recipes.
 Only registered client should be able to access the API. For that purpose, it must implement OAUTH 2.0authentication protocol.
 A recipe is composed of a title, description, cooking instructions,estimated time of preparation, difficulty level, creationdate, and a list of ingredients.
 Ingredients will be composed at least of a name and a price.
